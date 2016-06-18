@@ -4,15 +4,14 @@ Write a function called sum() that takes in two numbers as arguments and then re
 "The sum of 4 and 7 is 11."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
-// Write your code here
+//Write your code here
 function sum(a,b){
-  var result = a + b;
-  var message = 'The sum of ' + a + ' and ' + b + ' is ' + result + '.';
-  // console.log(message);
-  // console.log('The sum of 4 and 7 is 11.');
-  return [result, message];
+  var answer = a + b;
+  var sentence = 'The sum of ' + a + ' and ' + b + ' is ' + answer + '.';
+  console.log(sentence);
+  return[answer, sentence] ;
 }
-
+sum(4,7);
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
 
@@ -26,11 +25,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a,b){
-
+  var answer = a * b;
+  var sentence = 'The product of ' + a + ' and ' + b + ' is ' + answer + '.';
+  //console.log(sentence);
+  return[answer, sentence];
 }
-
+multiply(5,9);
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
